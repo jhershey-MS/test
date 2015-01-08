@@ -1,11 +1,139 @@
-test
-====
+Filtering test
 
-test repository
-- test 1
-- test 2
+ <script type="text/javascript">
+        function filter()
+        {
+            alert("Filter selected");
+            evaporate();
+            disevaporate();
+        }
+
+        function evaporate()
+        {
+           
+            if (document.getElementById("andCheck").checked == false)
+                {
+                var androids = document.getElementsByClassName("android");
+
+                for (i = 0; i < androids.length; i++) {
+                    androids[i].style.display = "none";
+                }
+            }
+            if (document.getElementById("jsCheck").checked == false) {
+                var javascripts = document.getElementsByClassName("js");
+                for (i = 0; i < javascripts.length; i++) {
+                    javascripts[i].style.display = "none";
+                }
+            }
+
+           
+
+            if (document.getElementById("winCheck").checked == false) {
+                var wins = document.getElementsByClassName("windows");
+
+                for (i = 0; i < wins.length; i++) {
+                    wins[i].style.display = "none";
+                }
+            }
+
+            if (document.getElementById("iosCheck").checked == false) {
+                var apples = document.getElementsByClassName("ios");
+
+                for (i = 0; i < apples.length; i++) {
+                    apples[i].style.display = "none";
+                }
+            }
+
+        }
+
+        function disevaporate()
+        {
+
+            if (document.getElementById("andCheck").checked == true) {
+                var androids = document.getElementsByClassName("android");
+
+                for (i = 0; i < androids.length; i++) {
+                    androids[i].style.display = "block";
+                }
+            }
+            if (document.getElementById("jsCheck").checked == true) {
+                var javascripts = document.getElementsByClassName("js");
+
+                for (i = 0; i < javascripts.length; i++) {
+                    javascripts[i].style.display = "block";
+                }
+            }
+
+           
+
+            if (document.getElementById("winCheck").checked == true) {
+                var wins = document.getElementsByClassName("windows");
+
+                for (i = 0; i < wins.length; i++) {
+                    wins[i].style.display = "block";
+                }
+            }
 
 
-12345555  - bob
+            if (document.getElementById("iosCheck").checked == true) {
+                var apples = document.getElementsByClassName("ios");
 
-asdfsdfsf - bob
+                for (i = 0; i < apples.length; i++) {
+                    apples[i].style.display = "block";
+                }
+            }
+
+        }
+    </script>
+    
+  #This is the form for the filter
+
+    <form>
+        <input type="checkbox" id="andCheck" name="android" onchange="filter()" />Android
+        <input type="checkbox" id="jsCheck" name="javascript" onchange="filter()" />JavaScript
+        <input type="checkbox" id="iosCheck" name="ios" onchange="filter()" />iOS
+        <input type="checkbox" id="winCheck" name="windows" onchange="filter()" />Windows
+    </form>
+    
+##These are our test paragraphs
+
+My common block of text 1
+
+    <div class="android">
+        My Android block of text 1
+    </div>
+
+    <div class="ios">
+        My iOS block of text
+    </div>
+
+       <div class="windows">
+        My Windows block of text 1
+    </div>
+
+        My common block of text 2
+    
+    <div class="android ios">
+        My Andrioid and iOS block of text 1
+    </div>
+
+    <div class="android ios js">
+        My Andrioid and iOS and Javascript block of text 1
+    </div>
+
+    <div class="js">
+        My Javascript block of text 1
+    </div>
+
+    <div class="android">
+        My Android block of text 2
+    </div>
+
+ 
+    <div class="js">
+        My Javascript block of text 2
+    </div>
+
+
+
+
