@@ -1,6 +1,6 @@
 Filtering test
 
- <script type="text/javascript">
+<script type="text/javascript">
         function filter()
         {
             alert("Filter selected");
@@ -84,56 +84,51 @@ Filtering test
             }
 
         }
-    </script>
+ </script>
     
   #This is the form for the filter
 
-    <form>
-        <input type="checkbox" id="andCheck" name="android" onchange="filter()" />Android
-        <input type="checkbox" id="jsCheck" name="javascript" onchange="filter()" />JavaScript
-        <input type="checkbox" id="iosCheck" name="ios" onchange="filter()" />iOS
-        <input type="checkbox" id="winCheck" name="windows" onchange="filter()" />Windows
-    </form>
-    
+ <form>
+ <input type="checkbox" id="andCheck" name="android" onchange="filter()" />Android
+ <input type="checkbox" id="jsCheck" name="javascript" onchange="filter()" />JavaScript
+ <input type="checkbox" id="iosCheck" name="ios" onchange="filter()" />iOS
+ <input type="checkbox" id="winCheck" name="windows" onchange="filter()" />Windows
+ </form>
+  
 ##These are our test paragraphs
 
 My common block of text 1
 
-    <div class="android">
-        My Android block of text 1
-    </div>
+ <span class="android">
+ My Android block of text 1
+ </span>
 
-    <div class="ios">
-        My iOS block of text
-    </div>
+ <span class="ios">
+ My iOS block of text
+ </span>
 
-       <div class="windows">
-        My Windows block of text 1
-    </div>
+ <span class="windows">
+ My Windows block of text 1
+ </span>
 
-        My common block of text 2
-    
-    <div class="android ios">
-        My Andrioid and iOS block of text 1
-    </div>
-
-    <div class="android ios js">
-        My Andrioid and iOS and Javascript block of text 1
-    </div>
-
-    <div class="js">
-        My Javascript block of text 1
-    </div>
-
-    <div class="android">
-        My Android block of text 2
-    </div>
-
+ My common block of text 2
  
-    <div class="js">
-        My Javascript block of text 2
-    </div>
+ <span class="android ios">
+ My Andrioid and iOS block of text 1
+ </span>
 
+ <span class="android ios js">
+ My Andrioid and iOS and Javascript block of text 1
+ </span>
 
+ <span class="js">
+ My Javascript block of text 1
+ </span>
 
+ <span class="android">
+ My Android block of text 2
+ </span>
 
+<span class="js">
+My Javascript block of text 2
+</span>
