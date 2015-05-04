@@ -1,3 +1,8 @@
+|---|---|---|
+| Page Regions | Associated Files | More Information |
+| Ribbon | Any of the default master pagers. <br/>CorrespondingCSS|<ul><li>Main Body – body: #s4-worspace</li><li>Suite bar – Left: #suiteBarLeft</li><li>Suite Bar – Right: @suiteBarRight</li><li>Ribbon container: #globalNavBox</li></ul> | Can be hidden via the Focus on Content button |
+
+
 Filtering test
 
 <script type="text/javascript">
